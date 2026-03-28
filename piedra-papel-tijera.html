@@ -33,7 +33,10 @@
       // COMBATE
       if (pc == jugador) {
         alert("EMPATE")
-      } else if (jugador == 1 && pc == 3 & jugador == 2 && pc == 1 & jugador == 3 && pc == 2) {
+      } else if ((jugador == 1 && pc == 3) || // Escenario A: Piedra vence a Tijera o
+                (jugador == 2 && pc == 1) || // Escenario B: Papel vence a Piedra o
+                (jugador == 3 && pc == 2)  // Escenario C: Rijera vence a Papel
+    ){
         alert("GANASTE")
   
       } else {
